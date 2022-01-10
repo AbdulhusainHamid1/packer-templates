@@ -29,7 +29,6 @@ override['travis_build_environment']['nodejs_default_modules'] = []
 
 pythons = %w[
   2.7.15
-  3.6.7
   3.7.1
 ]
 

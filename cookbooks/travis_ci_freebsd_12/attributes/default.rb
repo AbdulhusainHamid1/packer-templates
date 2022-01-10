@@ -28,7 +28,7 @@ override['travis_build_environment']['gimme']['default_version'] = gimme_version
 override['travis_build_environment']['pythons'] = []
 override['travis_build_environment']['python_aliases'] = {
   '2.7.15' => %w[2.7],
-  '3.6.10' => %w[3.6],
+  '3.7.1' => %w[3.7],
   'pypy2.7-5.8.0' => %w[pypy],
   'pypy3.5-5.8.0' => %w[pypy3]
 }

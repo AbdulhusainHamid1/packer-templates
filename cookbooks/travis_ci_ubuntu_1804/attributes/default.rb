@@ -6,7 +6,6 @@ override['travis_system_info']['commands_file'] = \
 override['travis_build_environment']['system_python']['pythons'] = %w[2.7 3.6]
 override['travis_build_environment']['python_aliases'] = {
   '2.7.17' => %w[2.7],
-  '3.6.10' => %w[3.6],
   '3.7.6' => %w[3.7],
   '3.8.1' => %w[3.8],
   'pypy2.7-5.8.0' => %w[pypy],
@@ -88,7 +87,6 @@ override['travis_build_environment']['nodejs_default'] = '10.16.0'
 
 pythons = %w[
   2.7.17
-  3.6.10
   3.7.6
   3.8.1
 ]

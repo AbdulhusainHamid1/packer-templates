@@ -66,7 +66,6 @@ bash 'pyenv_global_2.7.17_genc_pycparser' do
 end
 
 pyenv_versions = %w[
-  3.6.10
   3.7.6
   3.8.1
 ]

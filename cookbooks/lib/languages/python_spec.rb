@@ -41,13 +41,11 @@ describe 'python environment' do
   if 'xenial'.include?(Support.distro)
     vers = {
       'python2.7' => '2.7.15',
-      'python3.6' => '3.6.7',
       'python3.7' => '3.7.1'
     }
   elsif 'bionic'.include?(Support.distro)
     vers = {
       'python2.7' => '2.7.17',
-      'python3.6' => '3.6.10',
       'python3.7' => '3.7.6',
       'python3.8' => '3.8.1'
     }
