@@ -3,13 +3,13 @@
 override['maven']['install_java'] = false
 override['travis_system_info']['commands_file'] = \
   '/var/tmp/ubuntu-1804-system-info-commands.yml'
-override['travis_build_environment']['system_python']['pythons'] = %w[2.7 3.6]
+override['travis_build_environment']['system_python']['pythons'] = %w[3.7 2.7]
 override['travis_build_environment']['python_aliases'] = {
   '2.7.17' => %w[2.7],
   '3.7.6' => %w[3.7],
   '3.8.1' => %w[3.8],
-  'pypy2.7-5.8.0' => %w[pypy],
-  'pypy3.5-5.8.0' => %w[pypy3]
+  'pypy2.7-7.3.6' => %w[pypy],
+  'pypy3.7-7.3.7' => %w[pypy3]
 }
 php_aliases = {
   '7.1' => '7.1.33',
