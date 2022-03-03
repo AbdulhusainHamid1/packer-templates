@@ -5,15 +5,19 @@ override['travis_system_info']['commands_file'] = \
   '/var/tmp/ubuntu-2004-system-info-commands.yml'
 override['travis_build_environment']['system_python']['pythons'] = %w[3.8] # apt packages
 override['travis_build_environment']['python_aliases'] = {
+  '3.7.7' => %w[3.7],
   '3.8.3' => %w[3.8],
   'pypy2.7-7.3.1' => %w[pypy],
   'pypy3.6-7.3.1' => %w[pypy3]
 }
 # packages build by Cpython + our repo
 pythons = %w[
+  3.7.7
   3.8.3
+  3.9.0
 ]
 override['travis_build_environment']['pythons'] = pythons
+override['travis_build_environment']['virtualenv']['version'] = '20.0.20'
 
 override['travis_build_environment']['pip']['packages'] = {} # need to fill in
 
@@ -95,8 +99,6 @@ rubies = %w[
   2.7.0
   2.7.1
 ]
-
-override['travis_build_environment']['virtualenv']['version'] = '20.0.20'
 
 override['travis_build_environment']['default_ruby'] = rubies.reject { |n| n =~ /jruby/ }.max
 override['travis_build_environment']['rubies'] = rubies
