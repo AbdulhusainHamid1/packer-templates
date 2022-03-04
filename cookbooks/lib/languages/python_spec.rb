@@ -21,10 +21,10 @@ describe 'python environment' do
     its(:stdout) { should match(/^wheel \d+\.\d+\.\d+/) }
   end
 
-  #describe pycommand('py.test --version') do
+  # describe pycommand('py.test --version') do
   #  its(:stdout) { should be_empty }
   #  its(:stderr) { should match(/pytest (version )?\d+\.\d+\.\d+/) }
-  #end
+  # end
 
   describe pycommand('nosetests --version') do
     its(:stderr) { should be_empty }
@@ -51,7 +51,7 @@ describe 'python environment' do
       'python3.7' => '3.7.6',
       'python3.8' => '3.8.1'
     }
-  elsif
+  else
     vers = {
       'python3.7' => '3.7.7',
       'python3.8' => '3.8.3'
